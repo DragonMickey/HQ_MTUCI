@@ -23,7 +23,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     background: rgb(51, 12, 93);
-    background: linear-gradient(100deg, rgba(51, 12, 93, 1) 0%, rgba(91, 41, 145, 1) 20%, rgba(117, 62, 177, 1) 40%, rgba(135, 90, 185, 1) 60%, rgba(165, 110, 226, 1) 80%, rgba(192, 143, 246, 1) 100%);
+    background: radial-gradient(circle, #78179e, #3d4caa);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
 }
@@ -33,6 +33,113 @@ body {
     margin: 0 auto;
 }
 
+.underline:hover {
+    text-decoration: underline;
+}
+
+.news_title:hover,
+.album_title:hover,
+.contants_title:hover,
+.header_title:hover,
+.squad_title:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.transition {
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.header_title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.header_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 70px;
+}
+
+
+.squad_title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 66px;
+}
+
+.squad_list {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 66px;
+}
+
+.squad_list_item {
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 38px;
+    padding-bottom: 45px;
+    padding-top: 45px;
+    padding-left: 38px;
+    padding-right: 38px;
+
+    position: relative;
+}
+
+.squad_list_item:hover {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+}
+
+.squad_list_title {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin-bottom: 15px;
+}
+
+.squad_list_text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+    margin-bottom: 30px;
+}
+
+.squad_list_ref {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    text-decoration: none;
+
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 30px;
+}
 
 .news_title {
     font-weight: 300;
@@ -81,4 +188,48 @@ body {
 .album_img {
     width: 300px;
     height: 300px;
+}
+
+.hozirontal_line {
+    opacity: 0.4;
+    border: 1px solid #FFFFFF;
+    margin-bottom: 64px;
+    margin-top: 54px;
+}
+
+.contants_title {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.contacts_list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts_list_item {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.contacts_list_ref {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 19px;
+    display: flex;
 }
